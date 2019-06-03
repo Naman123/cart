@@ -9,18 +9,20 @@ Your Mysql db should have table below:
 
 Please create a db or use amn existing db of yours and create below table in it
 Step 1:
-CREATE TABLE `tbl_food_items` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `item_id` int(11) NOT NULL DEFAULT '0',
-  `name` varchar(255) NOT NULL DEFAULT '',
-  `group_name` varchar(255) NOT NULL DEFAULT '',
-  `calories` float NOT NULL DEFAULT '0',
-  `added_on` int(11) NOT NULL DEFAULT '0',
-  `status` tinyint(3) NOT NULL DEFAULT '1',
-  PRIMARY KEY (`id`),
-  KEY `itemId` (`item_id`),
-  KEY `status` (`status`)
-);
+
+
+CREATE TABLE `tbl_food_items` 
+  (`id`         INT(11) UNSIGNED NOT NULL auto_increment, 
+     `item_id`    INT(11) NOT NULL DEFAULT '0', 
+     `name`       VARCHAR(255) NOT NULL DEFAULT '', 
+     `group_name` VARCHAR(255) NOT NULL DEFAULT '', 
+     `calories`   FLOAT NOT NULL DEFAULT '0', 
+     `added_on`   INT(11) NOT NULL DEFAULT '0', 
+     `status`     TINYINT(3) NOT NULL DEFAULT '1', 
+     PRIMARY KEY (`id`), 
+     KEY `itemid` (`item_id`), 
+     KEY `status` (`status`) 
+  ); 
 Step 2:
 Please unzip the folder and copy the same to your lamp directory (/var/www for linux or htdocs for windows)
 
