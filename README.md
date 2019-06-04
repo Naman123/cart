@@ -45,4 +45,6 @@ Step 7:
 php artisan key:generate //generating encryptio key for app
 php artisan serve  //serving app to local env
 
+Make sure your storage folder has write permissions
+
 Now open the link to look up the project on local
