@@ -10,7 +10,7 @@
              <script type="text/javascript" src="{{ URL::asset('js/common.js') }}"></script>
               @yield('template_js')
                   <script type="text/javascript">
-                    var APP_URL = {!! json_encode(url('/')) !!}
+                    var APP_URL = "{{ Config::get('app.url')}}"
                     </script>
 
     </head>
