@@ -20,8 +20,8 @@
       <a class="navbar-brand" href="{{ URL::to('/')}}">Food Cart</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="{{ Request::segment(1) === null ? 'active' : null }}"><a href="{{ URL::to('/')}}">Search</a></li>
-      <li class="{{ Request::segment(1) === 'list' ? 'active' : null }}"><a href="{{ URL::to('/')}}/list">Cart</a></li>
+      <li class="{{ Request::segment(1) === null ? 'active' : null }}"><a href="{{ Config::get('app.url')}}">Search</a></li>
+      <li class="{{ Request::segment(1) === 'list' ? 'active' : null }}"><a href="{{ Config::get('app.url')}}/list">Cart</a></li>
     </ul>
   </div>
 </nav>
