@@ -17,7 +17,7 @@ SearchItem = new function() {
   $("#search_item").addClass('loading');
   if(excludeKeys.indexOf(code) == -1) {
   if (searchStr.length > 0 ) {
-    	var ajaxRoute='/item/search';
+    	var ajaxRoute=APP_URL+'/item/search';
     	var data={"searchStr":searchStr,"_token":$('#_token').val()}      
     	$instance.fetchAjax(ajaxRoute,data).then(function(response){
       $($instance.domHandles.searchBox).removeClass('loading');
@@ -64,7 +64,7 @@ SearchItem = new function() {
       return parseInt(obj.ndbno)=== parseInt(itemId)
     });
     itemDetails=itemDetails[0];
-      var ajaxRoute='/item/save';
+      var ajaxRoute=APP_URL+'/item/save';
       var data={"item":itemDetails,"_token":$('#_token').val()}      
       $instance.fetchAjax(ajaxRoute,data).then(function(response){
           itemSelector.removeClass('disabled').removeClass('process');
