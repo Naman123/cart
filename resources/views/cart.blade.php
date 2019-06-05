@@ -17,7 +17,7 @@ Search Items
 @stop
 @section('content')
 
-   	 <div class="right"><span class='shopping-cart'><a href="{{ url('/') }}
+   	 <div class="right"><span class='shopping-cart'><a href="{{ Config::get('app.url')}}
 /list" target="_blank"><strong class='cart_count'>{{ $cart_item_count }}</strong><img class='img' src="{{ URL::asset('images/shopping-cart.png') }}"></span></a></div>
         <form id="myForm">
         <div class="row">
