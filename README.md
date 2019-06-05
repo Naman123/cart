@@ -48,3 +48,6 @@ php artisan serve  //serving app to local env
 Make sure your storage folder has write permissions
 
 Now open the link to look up the project on local
+
+if you are deplotying to ssl server ,please add following line in voot function inside AppServiceProvider.php file
+\URL::forceScheme('https');
